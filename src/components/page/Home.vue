@@ -1,30 +1,108 @@
 <template>
-  	<div>
-  		<grid :rows="2">
-			<grid-item v-for="i in 2">
-				<div><span>kebin</span></div>
-			</grid-item>
-		</grid>
+  	<div class="body">
+  		<flexbox :gutter="0">
+			<flexbox-item :span="4">
+				<div class="item">
+					<span>fuck</span>
+				</div>
+			</flexbox-item>
+			<flexbox-item>
+				<div class="item">hello</div>
+			</flexbox-item>
+	    </flexbox>
+	    <flexbox :gutter="0">
+			<flexbox-item :span="4">
+				<div class="item">
+					<span>fuck</span>
+				</div>
+			</flexbox-item>
+			<flexbox-item :span="4">
+				<div class="item">
+					<span>fuck</span>
+				</div>
+			</flexbox-item>
+			<flexbox-item :span="4">
+				<div class="item">
+					<span>fuck</span>
+				</div>
+			</flexbox-item>
+	    </flexbox>
+	    <flexbox :gutter="0">
+			<flexbox-item :span="4">
+				<div class="item">
+					<span>fuck</span>
+				</div>
+			</flexbox-item>
+			<flexbox-item>
+				<div class="item">hello</div>
+			</flexbox-item>
+	    </flexbox>
+	    <flexbox :gutter="0">
+			<flexbox-item :span="4">
+				<div class="item">
+					<span>fuck</span>
+				</div>
+			</flexbox-item>
+			<flexbox-item :span="4">
+				<flexbox :gutter="0">
+					<flexbox-item :span="6">
+						<div class="item-item">
+							<span>fuck</span>
+						</div>
+					</flexbox-item>
+					<flexbox-item :span="6">
+						<div class="item-item">
+							<span>fuck</span>
+						</div>
+					</flexbox-item>
+				</flexbox>
+				<flexbox :gutter="0">
+					<flexbox-item :span="6">
+						<div class="item-item">
+							<span>fuck</span>
+						</div>
+					</flexbox-item>
+					<flexbox-item :span="6">
+						<div class="item-item">
+							<span>fuck</span>
+						</div>
+					</flexbox-item>
+				</flexbox>
+			</flexbox-item>
+			<flexbox-item :span="4">
+				<div class="item">
+					<span>fuck</span>
+				</div>
+			</flexbox-item>
+	    </flexbox>
   	</div>
 </template>
 
 <script>
-import { Grid, GridItem } from 'vux'
+import { Flexbox, FlexboxItem } from 'vux'
 
 export default {
 	components: {
-		Grid,
-		GridItem
+		Flexbox,
+		FlexboxItem
 	}
 }
 </script>
 
 <style>
-body {
+.body {
 	background-color: black;
+} 
+
+.item {
+	background-color: #fff;
+	height: 160px;
+	text-align: center;
 }
 
-.grid-item div {
-	margin: 10px
+.item-item {
+	background-color: #fff;
+	height: 80px;
+	text-align: center;
 }
 </style>
